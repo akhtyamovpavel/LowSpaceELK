@@ -19,7 +19,7 @@ services:
     volumes:
       - ./extensions/filebeat/config/filebeat.yml:/usr/share/filebeat/filebeat.yml:ro,Z
       - type: bind
-        source: /var/lib/docker/containers
+        source: /2tbsata/var/lib/docker/containers
         target: /var/lib/docker/containers
         read_only: true
       - type: bind
